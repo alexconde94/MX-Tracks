@@ -1,0 +1,25 @@
+<div class="grid-container">
+    <h1 class="mat-h1">Track List</h1>
+
+    <mat-grid-list cols="1" rowHeight="200px">
+        <mat-grid-tile *ngFor="let track of trackList" [rowspan]="1" [colspan]="1"> 
+            <mat-card class="dashboard-card">
+                <mat-card-header>
+                    <mat-card-title>
+                        {{track.trackName}}
+                    </mat-card-title>
+                </mat-card-header>
+
+                <mat-card-content class="dashboard-card-content">
+                    <p>This is a review of {{track.trackName}}!</p>
+                </mat-card-content>
+
+                <mat-card-footer>
+                    <button mat-button>
+                        <mat-icon>directions_bike</mat-icon>
+                    </button>
+                </mat-card-footer>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

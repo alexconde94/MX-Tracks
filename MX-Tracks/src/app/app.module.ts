@@ -17,6 +17,8 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { TrackListComponent } from './track-list/track-list.component';
+import { ExampleDashboardComponent } from './example-dashboard/example-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MatMenuModule } from '@angular/material/menu';
     NavbarComponent,
     TestContentComponent,
     WelcomePageComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    TrackListComponent,
+    ExampleDashboardComponent
   ],
   imports: [
     BrowserModule,

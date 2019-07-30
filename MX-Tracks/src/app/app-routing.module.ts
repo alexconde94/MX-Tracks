@@ -3,13 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { TestContentComponent } from './test-content/test-content.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { TrackListComponent } from './track-list/track-list.component';
+import { ExampleDashboardComponent } from './example-dashboard/example-dashboard.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/welcome', pathMatch: 'full'},
+  {path: '', redirectTo: '/track-list', pathMatch: 'full'},
   {path: 'test-page', component: TestContentComponent},
   {path: 'welcome', component: WelcomePageComponent},
-  {path: 'dashboard', component: UserDashboardComponent}
+  {path: 'track-list', component: TrackListComponent},
+  {path: 'dashboard', component: UserDashboardComponent},
+  {path: 'example-dashboard', component: ExampleDashboardComponent}
 ];
 
 @NgModule({

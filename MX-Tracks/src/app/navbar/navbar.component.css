@@ -15,3 +15,8 @@
   top: 0;
   z-index: 1;
 }
+
+.leftOptions {
+  position: absolute;
+  right: 25px;
+}

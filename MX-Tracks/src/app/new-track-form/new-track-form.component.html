@@ -1,0 +1,32 @@
+<mat-card class="add-new-track-card">
+    <mat-card-header>Add a new track</mat-card-header>
+
+    <mat-card-content>
+        <form class="new-track-form">
+            <mat-form-field appearance="standard">
+                <mat-label>Track name</mat-label>
+                <input matInput [(ngModel)]="trackName" name="trackName">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>MX Simulator Forum Link</mat-label>
+                <input matInput [(ngModel)]="mxsimForumURL" name="mxsimForumURL">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>Track Download Link</mat-label>
+                <input matInput [(ngModel)]="downloadURL" name="downloadURL">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>Image URL</mat-label>
+                <input matInput [(ngModel)]="imageURL" name="imageURL">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+
+    <mat-card-footer>
+        <button mat-button (click)="submitTrack()">Submit</button>
+    </mat-card-footer>
+
+</mat-card>
+
+<app-track-list></app-track-list>
+

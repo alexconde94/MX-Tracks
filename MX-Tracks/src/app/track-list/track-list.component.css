@@ -1,22 +1,42 @@
 .grid-container {
     margin: 20px;
   }
+
+h1 {
+  text-align: center;
+}
   
-  .dashboard-card {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
-  
-  .more-button {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-  }
-  
-  .dashboard-card-content {
-    text-align: left;
-    padding-left: 2%;
-  }
+.dashboard-card {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  width: 1000px;
+  height: 135px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  /* text-align: left; */
+  position: relative;
+  left: 17px;
+}
+
+.dashboard-card-footer {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.track-image {
+  position: absolute;
+  max-height: 120px;
+  right: 25px;
+  top: 25px;
+}

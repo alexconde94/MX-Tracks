@@ -1,9 +1,9 @@
 import { Location } from './Location';
 
 export class Profile {
-    firstName: String;
-    lastName: String;
+    firstName: string;
+    lastName: string;
     userId: number;
-    userType: String;
+    userType: string;
     location: Location;
 }

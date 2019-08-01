@@ -5,6 +5,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { TrackListComponent } from './track-list/track-list.component';
 import { ExampleDashboardComponent } from './example-dashboard/example-dashboard.component';
+import { NewTrackFormComponent } from './new-track-form/new-track-form.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'welcome', component: WelcomePageComponent},
   {path: 'track-list', component: TrackListComponent},
   {path: 'dashboard', component: UserDashboardComponent},
-  {path: 'example-dashboard', component: ExampleDashboardComponent}
+  {path: 'example-dashboard', component: ExampleDashboardComponent},
+  {path: 'add-track', component: NewTrackFormComponent}
 ];
 
 @NgModule({

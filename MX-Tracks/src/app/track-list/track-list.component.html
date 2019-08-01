@@ -4,12 +4,12 @@
     <mat-grid-list cols="1" rowHeight="200px">
         <mat-grid-tile *ngFor="let track of trackList" [rowspan]="1" [colspan]="1"> 
             <mat-card class="dashboard-card">
-                <mat-card-header>
+                <mat-card-header class="dashboard-card-header">
                     <mat-card-title>
                         {{track.trackName}}
                     </mat-card-title>
                 </mat-card-header>
-
+                <img *ngIf="track.imageURL" class="track-image" src="{{track.imageURL}}" alt="Track screenshot">
                 <mat-card-content class="dashboard-card-content">
                     <p>This is a review of {{track.trackName}}!</p>
                 </mat-card-content>
@@ -19,6 +19,11 @@
                     target="_blank" 
                     mat-button 
                     matTooltip="Open MX Simulator forum page"><mat-icon>directions_bike</mat-icon>
+                    </a>
+                    <a href="{{track.downloadURL}}" 
+                    target="_blank" 
+                    mat-button 
+                    matTooltip="Download"><mat-icon>cloud_download</mat-icon>
                     </a>
                 </mat-card-footer>
             </mat-card>

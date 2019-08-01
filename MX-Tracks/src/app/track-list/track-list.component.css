@@ -1,13 +1,19 @@
 .grid-container {
     margin: 20px;
   }
+
+h1 {
+  text-align: center;
+}
   
 .dashboard-card {
-  position: absolute;
+  position: relative;
   top: 15px;
   left: 15px;
   right: 15px;
   bottom: 15px;
+  width: 1000px;
+  height: 135px;
 }
 
 .more-button {
@@ -17,11 +23,20 @@
 }
 
 .dashboard-card-content {
-  text-align: left;
-  padding-left: 15px;
+  /* text-align: left; */
+  position: relative;
+  left: 17px;
 }
 
 .dashboard-card-footer {
   position: absolute;
   bottom: 25px;
+  left: 25px;
+}
+
+.track-image {
+  position: absolute;
+  max-height: 120px;
+  right: 25px;
+  top: 25px;
 }

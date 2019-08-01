@@ -1,0 +1,23 @@
+.add-new-track-card {
+    margin: 20px;
+    width: 600px;
+}
+
+.new-track-form {
+    padding: 25px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-card-header {
+    text-align: center;
+}
+
+mat-card-footer {
+    padding: 25px;
+}

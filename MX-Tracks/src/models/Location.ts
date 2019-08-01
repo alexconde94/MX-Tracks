@@ -1,5 +1,5 @@
 export class Location {
-    country: String;
-    city: String;
-    state: String;
+    country: string;
+    city: string;
+    state: string;
 }

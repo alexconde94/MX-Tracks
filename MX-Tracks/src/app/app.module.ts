@@ -20,6 +20,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { TrackListComponent } from './track-list/track-list.component';
 import { ExampleDashboardComponent } from './example-dashboard/example-dashboard.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { NewTrackFormComponent } from './new-track-form/new-track-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +34,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     WelcomePageComponent,
     UserDashboardComponent,
     TrackListComponent,
-    ExampleDashboardComponent
+    ExampleDashboardComponent,
+    NewTrackFormComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

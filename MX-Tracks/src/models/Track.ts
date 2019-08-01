@@ -1,4 +1,5 @@
 export class Track {
+    trackId: Number;
     trackName: String;
     mxsimForumURL: String;
     trackType?: String;

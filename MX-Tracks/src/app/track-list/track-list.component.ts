@@ -22,8 +22,8 @@ export class TrackListComponent{
 
   trackList: Track[];
 
-  constructor(private trackService: TrackService) { 
-    this.trackService.trackList.subscribe(trackList => this.trackList = trackList);
+  constructor(private trackService: TrackService) {
+    this.trackService.getTrackList().subscribe((trackList: Track[]) => this.trackList = trackList);
   }
 
 }

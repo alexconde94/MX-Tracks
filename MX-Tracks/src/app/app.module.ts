@@ -24,6 +24,7 @@ import { NewTrackFormComponent } from './new-track-form/new-track-form.component
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { FormsModule } from '@angular/forms';
     MatTooltipModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

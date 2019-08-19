@@ -9,18 +9,18 @@
                         {{track.trackName}}
                     </mat-card-title>
                 </mat-card-header>
-                <img *ngIf="track.imageURL" class="track-image" src="{{track.imageURL}}" alt="Track screenshot">
+                <img *ngIf="track.imageUrl" class="track-image" src="{{track.imageUrl}}" alt="Track screenshot">
                 <mat-card-content class="dashboard-card-content">
                     <p>This is a review of {{track.trackName}}!</p>
                 </mat-card-content>
 
                 <mat-card-footer class="dashboard-card-footer">
-                    <a href="{{track.mxsimForumURL}}" 
+                    <a href="{{track.mxSimForumUrl}}" 
                     target="_blank" 
                     mat-button 
                     matTooltip="Open MX Simulator forum page"><mat-icon>directions_bike</mat-icon>
                     </a>
-                    <a href="{{track.downloadURL}}" 
+                    <a href="{{track.downloadUrl}}" 
                     target="_blank" 
                     mat-button 
                     matTooltip="Download"><mat-icon>cloud_download</mat-icon>

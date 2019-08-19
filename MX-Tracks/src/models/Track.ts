@@ -1,11 +1,11 @@
 export class Track {
     trackId: number;
     trackName: string;
-    mxsimForumURL: string;
-    downloadURL: string;
+    mxSimForumUrl: string;
+    downloadUrl: string;
     trackType?: string;
     trackDescription?: string;
-    imageURL?: string;
-    youtubeURL?: string;
+    imageUrl?: string;
+    youtubeUrl?: string;
     rating?: number;
 }

@@ -12,22 +12,22 @@ export class TrackFactory {
     public static createTrack(
         trackId: number,
         trackName: string,
-        mxsimForumURL: string,
-        downloadURL?: string,
+        mxSimForumUrl: string,
+        downloadUrl?: string,
         trackType?: string,
         trackDescription?: string,
-        imageURL?: string,
-        youtubeURL?: string,
+        imageUrl?: string,
+        youtubeUrl?: string,
         rating?: number ): Track {
         return {
             trackId: trackId,
             trackName: trackName,
-            mxsimForumURL: mxsimForumURL,
-            downloadURL: downloadURL,
+            mxSimForumUrl: mxSimForumUrl,
+            downloadUrl: downloadUrl,
             trackType: trackType,
             trackDescription: trackDescription,
-            imageURL: imageURL,
-            youtubeURL: youtubeURL,
+            imageUrl: imageUrl,
+            youtubeUrl: youtubeUrl,
             rating: rating
         }
     }

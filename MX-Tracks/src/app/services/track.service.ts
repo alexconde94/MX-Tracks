@@ -15,8 +15,8 @@ export class TrackService {
   }
 
   getTrackList(): Observable<Track[]> {
-    return this.http.get<Track[]>("http://localhost:8080/trackList");
-    // return this.http.get<Track[]>("http://mxsimatlasservices-env-1.p3qhwpmbmg.us-east-1.elasticbeanstalk.com:8080/trackList");
+    // return this.http.get<Track[]>("http://localhost:8080/trackList");
+    return this.http.get<Track[]>("http://mxsimatlasservices-env-1.p3qhwpmbmg.us-east-1.elasticbeanstalk.com:8080/trackList");
   }
 
   addTrack(newTrack: Track) {

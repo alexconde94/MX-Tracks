@@ -22,15 +22,15 @@ export class NewTrackFormComponent {
 
   submitTrack() {
     this.trackService.addTrack(TrackFactory.createTrack(
-        this.trackService.getNextTrackId(),
+        null,
         this.trackName,
         this.cleanMXSimURL(this.mxsimForumURL),
-        this.trackType,
-        this.trackDescription,
         this.downloadURL,
+        "1",
+        null,
         this.imageURL,
-        this.youtubeURL,
-        this.rating
+        null,
+        null
       )
     );
   }

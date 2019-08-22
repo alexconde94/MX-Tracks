@@ -1,5 +1,5 @@
 export class Track {
-    trackId: number;
+    trackId?: number;
     trackName: string;
     mxSimForumUrl: string;
     downloadUrl: string;

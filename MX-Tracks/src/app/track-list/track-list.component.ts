@@ -23,7 +23,7 @@ export class TrackListComponent{
   trackList: Track[];
 
   constructor(private trackService: TrackService) {
-    this.trackService.getTrackList().subscribe((trackList: Track[]) => this.trackList = trackList);
+    this.trackService.trackList.subscribe((trackList: Track[]) => this.trackList = trackList);
   }
 
 }

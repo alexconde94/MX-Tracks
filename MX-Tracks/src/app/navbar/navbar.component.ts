@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, share } from 'rxjs/operators';
+import { UserService } from '../services/user.service';
+import { Profile } from 'src/models/profile';
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +18,18 @@ export class NavbarComponent {
       share()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  userProfile: Profile;
+  loggedIn: boolean;
+
+  constructor(private breakpointObserver: BreakpointObserver, private userService: UserService) {
+    this.userService.userProfile.subscribe((profile: Profile) => {
+      this.userProfile = profile;
+      this.loggedIn = profile != null? true : false;
+    });
+  }
+
+  logout() {
+    this.userService.logout();
+  }
 
 }

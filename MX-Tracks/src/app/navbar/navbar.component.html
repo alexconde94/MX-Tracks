@@ -26,6 +26,14 @@
       <span>MX-Tracks</span>
       <div class="leftOptions">
         <a mat-button href="/add-track">Add track</a>
+        <ng-container *ngIf="loggedIn; else elseTemplate">
+          <a mat-button>Logged in as: {{userProfile.firstName}} {{userProfile.lastName}}</a>
+          <a mat-button (click)="logout()">Logout</a>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <a mat-button href="/login">Login</a>
+        </ng-template>
+        
       </div>
     </mat-toolbar>
 

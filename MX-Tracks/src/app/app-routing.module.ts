@@ -6,6 +6,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { TrackListComponent } from './track-list/track-list.component';
 import { ExampleDashboardComponent } from './example-dashboard/example-dashboard.component';
 import { NewTrackFormComponent } from './new-track-form/new-track-form.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'track-list', component: TrackListComponent},
   {path: 'dashboard', component: UserDashboardComponent},
   {path: 'example-dashboard', component: ExampleDashboardComponent},
-  {path: 'add-track', component: NewTrackFormComponent}
+  {path: 'add-track', component: NewTrackFormComponent},
+  {path: 'login',  component: LoginComponent}
 ];
 
 @NgModule({

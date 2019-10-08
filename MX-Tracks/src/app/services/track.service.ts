@@ -5,6 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { ApiResponse } from 'src/models/ApiResponse';
+import { environment } from 'src/environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -24,7 +25,7 @@ export class TrackService {
   }
 
   fetchTrackList() {
-    this.http.get<ApiResponse<Track[]>>("http://mxsimatlasservices-env-1.p3qhwpmbmg.us-east-1.elasticbeanstalk.com:8080/trackList").forEach(response => {
+    this.http.get<ApiResponse<Track[]>>(environment.midTierBaseUrl + "/trackList").forEach(response => {
       this.trackList.next(response.content);
       console.log(response.message);
     });
@@ -32,7 +33,7 @@ export class TrackService {
 
   addTrack(newTrack: Track) {
     // this.trackList.next(this.trackList.value.concat(newTrack));
-    this.http.post<Track>("http://mxsimatlasservices-env-1.p3qhwpmbmg.us-east-1.elasticbeanstalk.com:8080/trackList/add", newTrack, httpOptions).subscribe();
+    this.http.post<Track>(environment.midTierBaseUrl + "/trackList/add", newTrack, httpOptions).subscribe();
   }
 
   getNextTrackId(): number {

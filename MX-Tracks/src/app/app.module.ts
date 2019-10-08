@@ -25,6 +25,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NewUserFormComponent } from './new-user-form/new-user-form.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     UserDashboardComponent,
     TrackListComponent,
     ExampleDashboardComponent,
-    NewTrackFormComponent
+    NewTrackFormComponent,
+    NewUserFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

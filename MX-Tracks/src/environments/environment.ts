@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  midTierBaseUrl: "http://localhost:8080"
+  midTierBaseUrl: "http://localhost:8082"
 };
 
 /*

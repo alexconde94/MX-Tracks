@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { ApiResponse } from 'src/models/ApiResponse';
 import { environment } from 'src/environments/environment';
+import { AtlasRequest } from 'src/models/AtlasRequest';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -25,10 +26,19 @@ export class TrackService {
   }
 
   fetchTrackList() {
-    this.http.get<ApiResponse<Track[]>>(environment.midTierBaseUrl + "/trackList").forEach(response => {
+
+    let request: AtlasRequest = {
+      method: "getAllTracks"
+    }
+
+    this.http.post<ApiResponse<Track[]>>(environment.midTierBaseUrl + "/mxatlas-router", request, httpOptions).forEach(response => {
       this.trackList.next(response.content);
       console.log(response.message);
     });
+
+    // this.http.get<ApiResponse<Track[]>>("http://localhost:8081/trackList").forEach(response => {
+    //   this.trackList.next(response.content);
+    // })
   }
 
   addTrack(newTrack: Track) {

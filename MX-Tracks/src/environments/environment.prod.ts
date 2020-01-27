@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  midTierBaseUrl: "http://mxsimatlasservices-env-1.p3qhwpmbmg.us-east-1.elasticbeanstalk.com:8080"
+  midTierBaseUrl: "http://3.84.7.166:8080/MXAtlas-Router/"
 };

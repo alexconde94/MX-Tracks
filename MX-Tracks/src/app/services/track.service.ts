@@ -35,14 +35,9 @@ export class TrackService {
       this.trackList.next(response.content);
       console.log(response.message);
     });
-
-    // this.http.get<ApiResponse<Track[]>>("http://localhost:8081/trackList").forEach(response => {
-    //   this.trackList.next(response.content);
-    // })
   }
 
   addTrack(newTrack: Track) {
-    // this.trackList.next(this.trackList.value.concat(newTrack));
     this.http.post<Track>(environment.midTierBaseUrl + "/trackList/add", newTrack, httpOptions).subscribe();
   }
 
